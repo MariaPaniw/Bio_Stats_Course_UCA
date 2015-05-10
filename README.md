@@ -1,12 +1,12 @@
 # Bio_Stats_Course_UCA
 Biological and Ecological Statistics using R - A Course of the UCA Biology Department 
 
-#Sessions: 
+###Sessions: 
 May 25-June 18, 2015 (Mondays & Wednesdays, 5-7 pm) 
-#Location: 
+###Location: 
 BIOBLIOTECA, Campus Rio San Pedro, Puerto Real (Espacio de Aprendizaje) 
 
-#Course description: 
+###Course description: 
 Biological data collected in the field or even in experimental settings is often very complex and can defy the assumptions of simple ANOVA or regression-based tests of significance. This course reviews these assumptions and then focuses on theoretical background and practical examples of implementing non-linear statistical modeling techniques using the statistical language R. 
 
 This is a hands-on applied course, where students will be introduced to R and will use this platform throughout the course to implement non-linear least square regression, generalized linear models for count and dichotomous data, and non-parametric methods. Students will be provided with data examples throughout the course and will be encouraged to implement the analytical tools using their own data in homework exercises. 
@@ -15,10 +15,10 @@ At the end of the course students should:
   -	become familiar with descriptive statistics, inference, and plotting in R; 
   -	get a substantial knowledge of linear and generalized linear models implemented in R.   
 
-#Prerequisites:
+###Prerequisites:
 Students should be familiar with ANOVA and linear regression as we will go over these concepts only briefly. Students will be working on their own computers and should have R and R Studio installed and ready to go. 
 
-#Syllabus:
+###Syllabus:
 
 Monday, May 25
   -	R, CRAN, and R packages 
