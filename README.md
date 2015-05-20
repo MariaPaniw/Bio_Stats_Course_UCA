@@ -53,3 +53,58 @@ Wednesday, June 17
   -	R in action: GAM 
 
 
+Why use R? RStudio?
+========================================================
+author: Maria Paniw 
+date: May 25, 2015
+
+
+Some good reason to use R
+========================================================
+[Overview](#the-essentials-of-r)
+
+- *R is extremely poweful*
+- **R is free** - in the sense that you can download and distribute it for free
+- **R is free** - in the sense that you can manipulate the source code 
+- **R runs well on many computer platforms**
+- **R is rapidly gaining popularity**
+
+
+## The Essentials of R 
+*The essentials of R*
+========================================================
+
+
+R is maintained and archived on  [CRAN](http://cran.r-project.org/) 
+
+> CRAN is a network of ftp and web servers around the world that store identical, up-to-date, versions of code and documentation for R. Please use the CRAN mirror nearest to you to minimize network load.
+
+Even better reasons to use RStudio
+========================================================
+
+Running R in command line can be burdensome!!! 
+
+![Command line](Rconsole.png)
+
+
+
+
+Even better reasons to use RStudio
+========================================================
+
+[RStudio](www.rstudio.com) 
+
+> RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
+
+RStudio
+========================================================
+see [RStudio layout]
+
+![RStudio layout](Rstudio1.png)
+
+RStudio
+========================================================
+
+![Rstudio sections](Rstudio2.png)
+
+
