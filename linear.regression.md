@@ -102,9 +102,10 @@ This is because, shifting the equation for linear regression a bit:
 
 The points make the variance
 ========================================================
-The more spread out the points, the larger $\sigma^2$
 
-In plot 1, ![] (http://www.sciweavers.org/download/Tex2Img_1432887703.jpg) is larger than in plot 2
+The more spread out the points, the larger ![] (http://www.sciweavers.org/download/Tex2Img_1432899958.jpg) 
+
+In plot 1, ![] (http://www.sciweavers.org/download/Tex2Img_1432899958.jpg)  is larger than in plot 2
 
 
 ![Regression plot 2](G:/Teaching/StatCourse/Presentations/week1_regression-figure/unnamed-chunk-4-1.png) 
@@ -119,14 +120,32 @@ The residual sum of squares!
 
 ![] (http://www.sciweavers.org/download/Tex2Img_1432887841.jpg)
 
-where ![] (http://www.sciweavers.org/download/Tex2Img_1432887870.jpg) is the observed repsonse at point *i* and ![] (http://www.sciweavers.org/download/Tex2Img_1432888183.jpg) is the predicted value from the regression equation.
+where ![] (http://www.sciweavers.org/download/Tex2Img_1432887870.jpg) is the observed repsonse at point *i* and 
+![] (http://www.sciweavers.org/download/Tex2Img_1432888183.jpg) is the predicted value from the regression equation.
 
 The **best fit** regression line minimizes RSS.
 
 How doe we estimate the two parameters in the model?
 ========================================================
+The sum of squares of a variable X,![] (http://www.sciweavers.org/download/Tex2Img_1432899332.jpg), 
+measures the squared deviation of each observation ![] (http://www.sciweavers.org/download/Tex2Img_1432899370.jpg)
+from the mean of all the observations ![] (http://www.sciweavers.org/download/Tex2Img_1432899441.jpg) :
 
-The sum of squares of a variable X ($SS_X$) measures the squared deviation of each observation $X_i$ from the mean of all the observations $\bar X$ :
+
+The sum of squares of a variable X, ![] (http://www.sciweavers.org/download/Tex2Img_1432899332.jpg),  measures the squared deviation of each observation ![] (http://www.sciweavers.org/download/Tex2Img_1432899370.jpg) from the mean of all the observations ![] (http://www.sciweavers.org/download/Tex2Img_1432899441.jpg) :
+
+$$SS_X = \sum\limits_{i=1}^n (X_i - \bar X)^2$$ 
+
+Dividing this SS by (*n*-1), where *n* is our sample size, gives us the sample variance:
+
+$$s_X^2 = \frac{1}{n-1} \sum\limits_{i=1}^n (X_i - \bar X)^2$$ 
+
+
+The sum of squares of a variable X, ![] (http://www.sciweavers.org/download/Tex2Img_1432899332.jpg)  
+
+measures the squared deviation of each observation 
+![] (http://www.sciweavers.org/download/Tex2Img_1432899370.jpg) from the mean of all the observations
+![] (http://www.sciweavers.org/download/Tex2Img_1432899441.jpg):
 
 ! [] (http://www.sciweavers.org/download/Tex2Img_1432888224.jpg)
 
@@ -174,19 +193,19 @@ SS as fundamental principle of parametric analyses
 
 In parametric analysis, we want to partition the SS (sum of squares) into different components. 
 
-Conceptually, we are looking at our response, *Y*, and $SS_Y =  \sum\limits_{i=1}^n (Y_i - \bar Y_i)^2$ is the total variance that we are trying to partition into its components:
+Conceptually, we are looking at our response, *Y*, and ![] (http://www.sciweavers.org/download/Tex2Img_1432899487.jpg) is the total variance that we are trying to partition into its components:
 
-The *RSS* is the  random component. The remaining variation, $SS_{reg}$, is the regression relatioship $Y_i = \beta_0 + \beta_1X_i$
+The *RSS* is the  random component. The remaining variation, ![] (http://www.sciweavers.org/download/Tex2Img_1432899531.jpg), is the regression relatioship ![] (http://www.sciweavers.org/download/Tex2Img_1432899562.jpg)
 
-So, the total variance is: $SS_Y = SS_{reg} + RSS$
+So, the total variance is: ![] (http://www.sciweavers.org/download/Tex2Img_1432899628.jpg)
 
 
 Is the relationship between X and statistically significant?
 ========================================================
 
-$H_0:$ $Y_i = \beta_0 + \epsilon_i$
-
-$H_a:$ $Y_i = \beta_0 + \beta_1X_i + \epsilon_i$
+![] (http://www.sciweavers.org/download/Tex2Img_1432899654.jpg)  ![] (http://www.sciweavers.org/download/Tex2Img_1432899742.jpg)
+ 
+![] (http://www.sciweavers.org/download/Tex2Img_1432899697.jpg) ![] (http://www.sciweavers.org/download/Tex2Img_1432899776.jpg)
 
 
 Welcome to the world of ANOVA
