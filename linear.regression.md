@@ -118,27 +118,22 @@ The key concept of linear regression:
 
 The residual sum of squares!
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432887841.jpg)
+![] (http://www.sciweavers.org/download/Tex2Img_1432921952.jpg)
 
-where ![] (http://www.sciweavers.org/download/Tex2Img_1432887870.jpg) is the observed repsonse at point *i* and 
-![] (http://www.sciweavers.org/download/Tex2Img_1432888183.jpg) is the predicted value from the regression equation.
+where ![] (http://www.sciweavers.org/download/Tex2Img_1432921986.jpg) is the observed repsonse at point *i* and ![] (http://www.sciweavers.org/download/Tex2Img_1432922054.jpg) is the predicted value from the regression equation.
 
 The **best fit** regression line minimizes RSS.
 
 How doe we estimate the two parameters in the model?
 ========================================================
 
-The sum of squares of a variable X, ![] (http://www.sciweavers.org/download/Tex2Img_1432899332.jpg),  
+The sum of squares of a variable X, ![] (http://www.sciweavers.org/download/Tex2Img_1432920739.jpg), measures the squared deviation of each observation ![] (http://www.sciweavers.org/download/Tex2Img_1432920775.jpg) from the mean of all the observations ![] (http://www.sciweavers.org/download/Tex2Img_1432922111.jpg) :
 
-measures the squared deviation of each observation 
-![] (http://www.sciweavers.org/download/Tex2Img_1432899370.jpg) from the mean of all the observations
-![] (http://www.sciweavers.org/download/Tex2Img_1432899441.jpg):
-
-! [] (http://www.sciweavers.org/download/Tex2Img_1432888224.jpg)
+![] (http://www.sciweavers.org/download/Tex2Img_1432922155.jpg)
 
 Dividing this SS by (*n*-1), where *n* is our sample size, gives us the sample variance:
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432888343.jpg)
+![] (http://www.sciweavers.org/download/Tex2Img_1432922197.jpg)
 
 
 In a linear regression, we have at least two variables of course
@@ -148,51 +143,52 @@ Thus, we have to measure the sample covariance!
 
 In this case, we have a **sum of cross products**: 
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432888390.jpg)
+![] (http://www.sciweavers.org/download/Tex2Img_1432921114.jpg)
 
 Which, divided by (*n*-1), gives us the sample **covariance**:
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432888864.jpg)
+![] (http://www.sciweavers.org/download/Tex2Img_1432921173.jpg)
 
 The slope and intercept
 ========================================================
 
 ![] (http://www.sciweavers.org/download/Tex2Img_1432887480.jpg) and ![] (http://www.sciweavers.org/download/Tex2Img_1432887536.jpg) are the estimated as:
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432888958.jpg)
+![] (http://www.sciweavers.org/download/Tex2Img_1432921278.jpg)
 
 and 
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432889001.jpg)
+![] (http://www.sciweavers.org/download/Tex2Img_1432921380.jpg)
 
 The error term
 ========================================================
 
-The last thing we need to estimate is ![] (http://www.sciweavers.org/download/Tex2Img_1432889158.jpg).
+The last thing we need to estimate is ![] (http://www.sciweavers.org/download/Tex2Img_1432921410.jpg).
 
-Remember that ![] (http://www.sciweavers.org/download/Tex2Img_1432889197.jpg)
+Remember that ![] (http://www.sciweavers.org/download/Tex2Img_1432887703.jpg)
 
-So, we need an estimate of ![] (http://www.sciweavers.org/download/Tex2Img_1432889228.jpg) to get ![] (http://www.sciweavers.org/download/Tex2Img_1432889158.jpg):
+So, we need an estimate of ![] (http://www.sciweavers.org/download/Tex2Img_1432899958.jpg) to get ![] (http://www.sciweavers.org/download/Tex2Img_1432921410.jpg):
 
-![equation] (http://www.sciweavers.org/download/Tex2Img_1432886948.jpg)
+![] (http://www.sciweavers.org/download/Tex2Img_1432921572.jpg)
+
+
 SS as fundamental principle of parametric analyses
 ========================================================
 
 In parametric analysis, we want to partition the SS (sum of squares) into different components. 
 
-Conceptually, we are looking at our response, *Y*, and ![] (http://www.sciweavers.org/download/Tex2Img_1432899487.jpg) is the total variance that we are trying to partition into its components:
+Conceptually, we are looking at our response, *Y*, and ![] (http://www.sciweavers.org/download/Tex2Img_1432921631.jpg) is the total variance that we are trying to partition into its components:
 
-The *RSS* is the  random component. The remaining variation, ![] (http://www.sciweavers.org/download/Tex2Img_1432899531.jpg), is the regression relatioship ![] (http://www.sciweavers.org/download/Tex2Img_1432899562.jpg)
-
-So, the total variance is: ![] (http://www.sciweavers.org/download/Tex2Img_1432899628.jpg)
+The *RSS* is the  random component. The remaining variation, ![] (http://www.sciweavers.org/download/Tex2Img_1432921669.jpg), is the regression relatioship ![] (http://www.sciweavers.org/download/Tex2Img_1432921698.jpg)
+So, the total variance is: ![] (http://www.sciweavers.org/download/Tex2Img_1432921745.jpg)
 
 
 Is the relationship between X and statistically significant?
 ========================================================
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432899654.jpg)  ![] (http://www.sciweavers.org/download/Tex2Img_1432899742.jpg)
- 
-![] (http://www.sciweavers.org/download/Tex2Img_1432899697.jpg) ![] (http://www.sciweavers.org/download/Tex2Img_1432899776.jpg)
+![] (http://www.sciweavers.org/download/Tex2Img_1432921775.jpg) ![] (http://www.sciweavers.org/download/Tex2Img_1432921826.jpg)
+
+![] (http://www.sciweavers.org/download/Tex2Img_1432921799.jpg) ![] (http://www.sciweavers.org/download/Tex2Img_1432921848.jpg)
 
 
 Welcome to the world of ANOVA
