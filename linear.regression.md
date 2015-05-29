@@ -127,21 +127,8 @@ The **best fit** regression line minimizes RSS.
 
 How doe we estimate the two parameters in the model?
 ========================================================
-The sum of squares of a variable X,![] (http://www.sciweavers.org/download/Tex2Img_1432899332.jpg), 
-measures the squared deviation of each observation ![] (http://www.sciweavers.org/download/Tex2Img_1432899370.jpg)
-from the mean of all the observations ![] (http://www.sciweavers.org/download/Tex2Img_1432899441.jpg) :
 
-
-The sum of squares of a variable X, ![] (http://www.sciweavers.org/download/Tex2Img_1432899332.jpg),  measures the squared deviation of each observation ![] (http://www.sciweavers.org/download/Tex2Img_1432899370.jpg) from the mean of all the observations ![] (http://www.sciweavers.org/download/Tex2Img_1432899441.jpg) :
-
-$$SS_X = \sum\limits_{i=1}^n (X_i - \bar X)^2$$ 
-
-Dividing this SS by (*n*-1), where *n* is our sample size, gives us the sample variance:
-
-$$s_X^2 = \frac{1}{n-1} \sum\limits_{i=1}^n (X_i - \bar X)^2$$ 
-
-
-The sum of squares of a variable X, ![] (http://www.sciweavers.org/download/Tex2Img_1432899332.jpg)  
+The sum of squares of a variable X, ![] (http://www.sciweavers.org/download/Tex2Img_1432899332.jpg),  
 
 measures the squared deviation of each observation 
 ![] (http://www.sciweavers.org/download/Tex2Img_1432899370.jpg) from the mean of all the observations
