@@ -63,12 +63,12 @@ plot(x=x.vec,y=determ.lf(x=x.vec),type="l", ylab="Y")
 
 abline(h=3,col="red")
 ```
-![Regression plot](https://github.com/MariaPaniw/Bio_Stats_Course_UCA/tree/master/FiguresData/LRfig2.png) 
+![Regression plot] (https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/LRfig2.png) 
 
 Statistical relationship between X and Y 
 ========================================================
 
-![Random points](https://github.com/MariaPaniw/Bio_Stats_Course_UCA/tree/master/FiguresData/LRfig3.png) 
+![Random points] (https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/LRfig3.png) 
 
 Statistical relationship between X and Y 
 ========================================================
@@ -108,7 +108,7 @@ The more spread out the points, the larger ![] (http://www.sciweavers.org/downlo
 In plot 1, ![] (http://www.sciweavers.org/download/Tex2Img_1432899958.jpg)  is larger than in plot 2
 
 
-![Regression plot 2](https://github.com/MariaPaniw/Bio_Stats_Course_UCA/tree/master/FiguresData/LRfig4.png) 
+![Regression plot 2] (https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/LRfig4.png) 
 
 
 If points have a noise component, how do we fit a line?
