@@ -4,12 +4,9 @@ author: Maria Paniw
 date: February 8, 2016; UCA
 
 
-A quick overview of the type of analysis needed depending on your design
-========================================================
-
-![Sampling desings](https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/samplingDesignTable.png)
 
 We will go over four types of analyses:
+==============================================
 
 - Regression (normal errors)
 - ANOVA (normal errors)
@@ -24,7 +21,7 @@ Whenever we do simple univariate statistics, we make four key assumptions:
 
 
 =============================
-![Independence assumption](pollination.png)
+![Independence assumption](https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/pollination.png)
 Same pollinators visit my sampling units. Independence may be compromised. 
 
 ========================
@@ -34,7 +31,7 @@ Same pollinators visit my sampling units. Independence may be compromised.
 
 The effect of grazing and and climate are confounded:
 
-![Randomness](confound.png)
+![Randomness](https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/confound.png)
 
 =========================
 - **Linearity** - the relationship between response and predictor is linear.
@@ -50,14 +47,14 @@ Source: Luis Cayuela,EcoLab, Universidad de Granada, lcayuela@ugr.es.
 
 
 ==========================
-![follow these steps](flowStat.png)
+![follow these steps](https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/flowStat.png)
 
 
 Regression 
 =========================================
 
 Simple regression designs are typically based on observational studies. Here, you typically analyze relationships between continuous variables,
-i.e., variables that can go from $-\infty$ to  $\infty$
+i.e., variables that can go from ![equation](http://www.sciweavers.org/tex2img.php?eq=%24-%5Cinfty%24%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) to  ![equation](http://www.sciweavers.org/tex2img.php?eq=%24%5Cinfty%24%0A&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0)
 
 Basically, regression analysis describes the relationship between the predictor (*x*-axis) and the response (*y*-axis)
 
