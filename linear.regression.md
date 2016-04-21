@@ -7,7 +7,7 @@ date: February 8, 2016; UCA
 A quick overview of the type of analysis needed depending on your design
 ========================================================
 
-![Sampling desings](samplingDesignTable.png)
+![Sampling desings](https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/Figures/ARIMA_3.png)
 
 We will go over four types of analyses:
 
