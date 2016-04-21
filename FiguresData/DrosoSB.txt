@@ -1,0 +1,15 @@
+"fireStatus"	"block"	"survSB"
+"burned"	1	12
+"unburned"	1	15
+"burned"	2	8
+"unburned"	2	17
+"burned"	3	11
+"unburned"	3	18
+"burned"	4	11
+"unburned"	4	17
+"burned"	5	13
+"unburned"	5	16
+"burned"	6	16
+"unburned"	6	18
+"burned"	7	12
+"unburned"	7	19
