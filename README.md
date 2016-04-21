@@ -1,54 +1,44 @@
 # Bio_Stats_Course_UCA
 Biological and Ecological Statistics using R - A Course of the UCA Biology Department 
 
-###Sessions: 
-May 25-June 18, 2015 (Mondays & Wednesdays, 5-7 pm) 
-###Location: 
-BIOBLIOTECA, Campus Rio San Pedro, Puerto Real (Espacio de Aprendizaje) 
+PLEASE NOTE THAT I AM REVISING THE .MD FILES AND FOR NOW, ONLY PDFs OF THE LECTURES ARE AVAILABLE
+
+
+# Experimental Design and Analysis in R 
+
+###Taught by: 
+Maria Paniw, PhD student in Departamento de Biología (Área de Botánica), CASEM
+###Taught for:
+Undergraduate, graduate, and postgraduate students/researchers in biology/ecology
 
 ###Course description: 
-Biological data collected in the field or even in experimental settings is often very complex and can defy the assumptions of simple ANOVA or regression-based tests of significance. This course reviews these assumptions and then focuses on theoretical background and practical examples of implementing non-linear statistical modeling techniques using the statistical language R. 
+Experimental design is essential in all natural sciences. For decades, simple ANOVA designs have dominated literature. However, with advances in statistical applications, more complex, hierarchical designs are increasingly applied to separate treatment effects from noise. One statistical application that facilitates the analysis of experimental data is R and in this course, you will learn how to use several statistical packages in R to this goal. This is a hands-on applied course, where students will apply several basic statistical frameworks in R by working though examples, either using their own or simulated data. 
 
-This is a hands-on applied course, where students will be introduced to R and will use this platform throughout the course to implement non-linear least square regression, generalized linear models for count and dichotomous data, and non-parametric methods. Students will be provided with data examples throughout the course and will be encouraged to implement the analytical tools using their own data in homework exercises. 
-
-At the end of the course students should:
-  -	become familiar with descriptive statistics, inference, and plotting in R; 
-  -	get a substantial knowledge of linear and generalized linear models implemented in R.   
+###At the end of the course students should:
+-	Understand basic experiment design approaches
+-	Get a good idea of ANOVA and linear regression in R
+-	Become familiar with mixed effect models
 
 ###Prerequisites:
-Students should be familiar with ANOVA and linear regression as we will go over these concepts only briefly. Students will be working on their own computers and should have R and R Studio installed and ready to go. 
+A working knowledge of R. 
 
 ###Syllabus:
 
-Monday, May 25
-  -	R, CRAN, and R packages 
-  -	Types of data and R objects (e.g., vectors, matrices, lists) 
-  -	Most important R functions 
-  -	Basic data manipulation with R functions
-  -	R plots 
+-	Overview of experimental designs
+-	Factorial or ANOVA designs
+-	Block and hierarchical designs
 
-Wednesday, May 27
-  -	R in action: Linear regression and ANOVA
+-	Analysing factorial designs: ANOVA, linear regression, and ANCOVA
 
-Monday, June 1
-  -	R in action: Combining regression and ANOVA -> ANCOVA 
-  -	Analyzing hierarchical designs: Mixed effect linear models
+-	A framework for factorial analysis: generalized linear models (GLM)
+-	Binomial models 
+-	Poisson models
 
-Wednesday, June 3
-  -	Concept: Maximum likelihood estimation – the key concept in modern statistics 
+-	Analysing block and hierarchical designs: linear mixed models (LMER)
+-	Plots as random effects
+-	Repeated-measure analysis 
 
-Monday, June 8
-  -	Concept: non-linear least square regression
-  -	R in action: the nls function
+-	Generalized linear mixed models (GLMER)
+-	Examples with nested data 
 
-Wednesday, June 10
-  -	Concept: discrete probability distributions (Poisson, Binomial, and Negative Binomial) 
-  -	R in action: Generalized linear models 
-
-Monday, June 15
-  -	R in action: Generalized linear (mixed effect) models 
-  -	Concept: non-parametric models (generalized additive models) 
-
-Wednesday, June 17
-  -	R in action: GAM 
 
