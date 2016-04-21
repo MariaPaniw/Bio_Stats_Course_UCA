@@ -1,13 +1,62 @@
-Linear regression
+Experimental Designs
 ========================================================
-author: Maria Paniw
+author: Maria Paniw 
+date: February 8, 2016; UCA
 
-date: 27.5.2015
 
-
-Regression
+A quick overview of the type of analysis needed depending on your design
 ========================================================
-Regression analyzes relationships between continuous variables,
+
+![Sampling desings](samplingDesignTable.png)
+
+We will go over four types of analyses:
+
+- Regression (normal errors)
+- ANOVA (normal errors)
+- ANCOVA (normal errors)
+- Regression/ANOVA/ANCOVA (non-normal errors)
+
+Assumptions of simple regression, ANOVA, and ANCOVA
+=====================
+Whenever we do simple univariate statistics, we make four key assumptions:
+
+- **Independence** of sampling units: For example, I can measure pollinator activity in 100 different plants. But if I choose my plants too close to each other, the same, *hyperactive* pollinator may go to several neighboring plants. Then, the measurements I make on the negihboring plants are not independent from one another: 
+
+
+=============================
+![Independence assumption](pollination.png)
+Same pollinators visit my sampling units. Independence may be compromised. 
+
+========================
+- **Random** arrangement of sampling units and treatments: For example, I want to measure how grazer activity affects plant growth. I create a treatment *grazing* with two levels, *grazers allowed* and *grazers excluded*. Fo far so good. But what I fail to notice is that the sites in which grazers are allowed are in a climatically distinct zone from the ones where grazers are excluded. Then climate is a **confounding** variable and may pose a **huge problem**.
+
+===================
+
+The effect of grazing and and climate are confounded:
+
+![Randomness](confound.png)
+
+=========================
+- **Linearity** - the relationship between response and predictor is linear.
+- **Normality** - the residuals of the model describing the relashionship between predictor and response and normally distributed
+- **Homoscedasticity** - the variance of the residuals is constant
+
+The assumption of homoscedasticity is typically the key aspect of simple regression and ANOVA designs. 
+
+Steps to take in simple statistical analyses
+=============================
+
+Source: Luis Cayuela,EcoLab, Universidad de Granada, lcayuela@ugr.es.
+
+
+==========================
+![follow these steps](flowStat.png)
+
+
+Regression 
+=========================================
+
+Simple regression designs are typically based on observational studies. Here, you typically analyze relationships between continuous variables,
 i.e., variables that can go from $-\infty$ to  $\infty$
 
 Basically, regression analysis describes the relationship between the predictor (*x*-axis) and the response (*y*-axis)
@@ -24,20 +73,20 @@ Regression, as any kind of statistical analysis, begins with a hypothesis:
 
 Once we have our hypothesis, we must express it mathematically.
 
-![equation] (http://www.sciweavers.org/download/Tex2Img_1432887339.jpg)
+$$ Y = f(X) $$
 
-What kind of ![] (http://www.sciweavers.org/download/Tex2Img_1432887381.jpg)?
+What kind of $f()$ ?
 
 In linear regression: Y is a linear function of X, i.e.,
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432887440.jpg)
+$$ Y = \beta_0 + \beta_1X$$
  
 
 
 Defining parameters
 ========================================================
 
-Here, ![] (http://www.sciweavers.org/download/Tex2Img_1432887480.jpg) is the **intercept** and ![] (http://www.sciweavers.org/download/Tex2Img_1432887536.jpg) is the **slope** 
+Here, $\beta_0$ is the **intercept** and $\beta_1$ is the **slope** 
 
 These are the two **parameters** of our linear model.
 
@@ -63,30 +112,30 @@ plot(x=x.vec,y=determ.lf(x=x.vec),type="l", ylab="Y")
 
 abline(h=3,col="red")
 ```
-![Regression plot] (https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/LRfig2.png) 
+![Regression plot](G:/Teaching/StatCourse/Presentations/week1_regression-figure/unnamed-chunk-2-1.png) 
 
 Statistical relationship between X and Y 
 ========================================================
 
-![Random points] (https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/LRfig3.png) 
+![Random points](G:/Teaching/StatCourse/Presentations/week1_regression-figure/unnamed-chunk-3-1.png) 
 
 Statistical relationship between X and Y 
 ========================================================
 If we cannot predict our data excatly by the linear regression because we have
 variation in our data that is not accounted for, we turn to a statistical model
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432887589.jpg)
+$$Y_i = \beta_0 + \beta_1X_i + \epsilon_i$$
 
 Each observation *i* in our data (*rows*), is associated with a value for X and Y, both measured at the same replicate! 
 
 The betas and the epsilon
 ========================================================
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432887480.jpg) and  ![] (http://www.sciweavers.org/download/Tex2Img_1432887536.jpg) are  constants 
+$\beta_0$ and  $\beta_1$ are  constants 
 
-On the other hand, ![] (http://www.sciweavers.org/download/Tex2Img_1432887703.jpg)
+On the other hand, $\epsilon \sim \mathcal{N} (0,\sigma^2)$
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432887746.jpg) is the variance, which is 0 if the points lie perfectly on the line. 
+ $\sigma^2$ is the variance, which is 0 if the points lie perfectly on the line. 
 
 So what's the deal with normality?
 ========================================================
@@ -97,18 +146,17 @@ When you do linear regression, you are always asked:
 
 This is because, shifting the equation for linear regression a bit: 
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432887782.jpg)
+$$Y \sim \mathcal{N} (\beta_0 + \beta_1X,\sigma^2)$$
 
 
 The points make the variance
 ========================================================
+The more spread out the points, the larger $\sigma^2$
 
-The more spread out the points, the larger ![] (http://www.sciweavers.org/download/Tex2Img_1432899958.jpg) 
-
-In plot 1, ![] (http://www.sciweavers.org/download/Tex2Img_1432899958.jpg)  is larger than in plot 2
+In plot 1, $\sigma^2$ is larger than in plot 2
 
 
-![Regression plot 2] (https://raw.githubusercontent.com/MariaPaniw/Bio_Stats_Course_UCA/master/FiguresData/LRfig4.png) 
+![Regression plot 2](G:/Teaching/StatCourse/Presentations/week1_regression-figure/unnamed-chunk-4-1.png) 
 
 
 If points have a noise component, how do we fit a line?
@@ -118,22 +166,22 @@ The key concept of linear regression:
 
 The residual sum of squares!
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432921952.jpg)
+$$RSS = \sum\limits_{i=1}^n (Y_i - \hat Y_i)^2$$ 
 
-where ![] (http://www.sciweavers.org/download/Tex2Img_1432921986.jpg) is the observed repsonse at point *i* and ![] (http://www.sciweavers.org/download/Tex2Img_1432922054.jpg) is the predicted value from the regression equation.
+where $Y_i$ is the observed repsonse at point *i* and $\hat Y_i$ is the predicted value from the regression equation.
 
 The **best fit** regression line minimizes RSS.
 
 How doe we estimate the two parameters in the model?
 ========================================================
 
-The sum of squares of a variable X, ![] (http://www.sciweavers.org/download/Tex2Img_1432920739.jpg), measures the squared deviation of each observation ![] (http://www.sciweavers.org/download/Tex2Img_1432920775.jpg) from the mean of all the observations ![] (http://www.sciweavers.org/download/Tex2Img_1432922111.jpg) :
+The sum of squares of a variable X ($SS_X$) measures the squared deviation of each observation $X_i$ from the mean of all the observations $\bar X$ :
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432922155.jpg)
+$$SS_X = \sum\limits_{i=1}^n (X_i - \bar X)^2$$ 
 
 Dividing this SS by (*n*-1), where *n* is our sample size, gives us the sample variance:
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432922197.jpg)
+$$s_X^2 = \frac{1}{n-1} \sum\limits_{i=1}^n (X_i - \bar X)^2$$ 
 
 
 In a linear regression, we have at least two variables of course
@@ -143,56 +191,68 @@ Thus, we have to measure the sample covariance!
 
 In this case, we have a **sum of cross products**: 
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432921114.jpg)
+$$SS_{XY} = \sum\limits_{i=1}^n (X_i - \bar X)(Y_i - \bar Y)$$ 
 
 Which, divided by (*n*-1), gives us the sample **covariance**:
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432921173.jpg)
+$$s_{xy} = \frac{1}{n-1} \sum\limits_{i=1}^n (X_i - \bar X)(Y_i - \bar Y)$$ 
 
 The slope and intercept
 ========================================================
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432887480.jpg) and ![] (http://www.sciweavers.org/download/Tex2Img_1432887536.jpg) are the estimated as:
+$\beta_0$ and  $\beta_1$ are the estimated as:
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432921278.jpg)
+$$\hat \beta_1 = \frac{s_{xy}}{s_X^2} = \frac{SS_{XY}}{SS_X}$$
 
 and 
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432921380.jpg)
+$$\hat \beta_0 = \bar Y - \hat \beta_1 \bar X$$
 
 The error term
 ========================================================
 
-The last thing we need to estimate is ![] (http://www.sciweavers.org/download/Tex2Img_1432921410.jpg).
+The last thing we need to estimate is $\epsilon_i$.
 
-Remember that ![] (http://www.sciweavers.org/download/Tex2Img_1432887703.jpg)
+Remember that $\epsilon = \mathcal{N} (0,\sigma^2)$
 
-So, we need an estimate of ![] (http://www.sciweavers.org/download/Tex2Img_1432899958.jpg) to get ![] (http://www.sciweavers.org/download/Tex2Img_1432921410.jpg):
+So, we need an estimate of $\sigma^2$ to get $\epsilon_i$:
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432921572.jpg)
-
+$$\hat \sigma^2 = \frac{RSS}{n-2} = \frac{ \sum\limits_{i=1}^n (Y_i - \hat Y_i)^2}{n-2} = \frac{ \sum\limits_{i=1}^n \big[ Y_i - (\hat \beta_0 +\hat \beta_1 X_i) \big]^2 }{n-2} $$
 
 SS as fundamental principle of parametric analyses
 ========================================================
 
 In parametric analysis, we want to partition the SS (sum of squares) into different components. 
 
-Conceptually, we are looking at our response, *Y*, and ![] (http://www.sciweavers.org/download/Tex2Img_1432921631.jpg) is the total variance that we are trying to partition into its components:
+Conceptually, we are looking at our response, *Y*, and $SS_Y =  \sum\limits_{i=1}^n (Y_i - \bar Y_i)^2$ is the total variance that we are trying to partition into its components:
 
-The *RSS* is the  random component. The remaining variation, ![] (http://www.sciweavers.org/download/Tex2Img_1432921669.jpg), is the regression relatioship ![] (http://www.sciweavers.org/download/Tex2Img_1432921698.jpg)
-So, the total variance is: ![] (http://www.sciweavers.org/download/Tex2Img_1432921745.jpg)
+The *RSS* is the  random component. The remaining variation, $SS_{reg}$, is the regression relatioship $Y_i = \beta_0 + \beta_1X_i$
+
+So, the total variance is: $SS_Y = SS_{reg} + RSS$
 
 
 Is the relationship between X and statistically significant?
 ========================================================
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432921775.jpg) ![] (http://www.sciweavers.org/download/Tex2Img_1432921826.jpg)
+$H_0:$ $Y_i = \beta_0 + \epsilon_i$
 
-![] (http://www.sciweavers.org/download/Tex2Img_1432921799.jpg) ![] (http://www.sciweavers.org/download/Tex2Img_1432921848.jpg)
+$H_a:$ $Y_i = \beta_0 + \beta_1X_i + \epsilon_i$
+
+We are testing the significance of the slope, as this is the only paramter that differs! 
+
+========================
+You can consider single-factor regression (only one predictor X) as an ANOVA table (Gotelli & Ellison. 2008. A Primer of Ecological Statistics):
+
+![ANOVA table for regression](ANOVAtable.png)
 
 
-Welcome to the world of ANOVA
-========================================================
+What about multiple regression?
+=========================
 
-![ANOVA table](ANOVAtable.png)
-Source: Gotelli & Ellison (2004)
+If we have more than one predictor, the RSS can be expressed in the following way:
+
+![Multiple regression](multReg.png)
+
+We have now a vector (length = *j*) of $\beta_j$ depicting the slopes associated with each predixtor $X_j$
+
+Things are a bit more complicated now, and we are getting to the core of linear models - creating the **model matrix** and doing some matrix algebra to get our $\beta$. 
